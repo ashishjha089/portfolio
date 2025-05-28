@@ -3,11 +3,11 @@ import StickyNavbar from "./components/StickyNavbar";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
 // import PortfolioGrid from "./components/PortfolioGrid";
-// import AboutSection from "./components/AboutSection";
+import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 // import EducationSection from "./components/EducationSection";
 // import ExperienceSection from "./components/ExperienceSection";
-// import SkillsSection from "./components/SkillsSection";
+import SkillsSection from "./components/SkillsSection";
 // import ProjectsSection from "./components/ProjectsSection";
 // import CertificationsSection from "./components/CertificationsSection";
 // import AchievementsSection from "./components/AchievementsSection";
@@ -66,8 +66,9 @@ const App = () => {
       <StickyNavbar />
       <main className="w-full max-w-5xl px-4 flex flex-col gap-12 mt-16 mb-16">
         <HeroSection />
-        {/* <AboutSection />
-        <EducationSection />
+        <AboutSection />
+        <SkillsSection />
+        {/* <EducationSection />
         <ExperienceSection />
         <SkillsSection />
         <ProjectsSection />
