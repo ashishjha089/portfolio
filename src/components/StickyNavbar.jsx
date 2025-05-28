@@ -16,7 +16,7 @@ const StickyNavbar = () => {
         <div className="flex items-center gap-2 select-none">
           <Sparkles className="text-purple-600" />
           <span className="font-bold text-lg text-gray-700 tracking-tight">
-            AKJ
+           AJ
           </span>
         </div>
         <ul className="flex gap-6">
