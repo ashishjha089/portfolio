@@ -1,10 +1,10 @@
 import React from "react";
 import StickyNavbar from "./components/StickyNavbar";
 import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
 // import PortfolioGrid from "./components/PortfolioGrid";
 // import AboutSection from "./components/AboutSection";
-// import ContactSection from "./components/ContactSection";
-// import Footer from "./components/Footer";
+import ContactSection from "./components/ContactSection";
 // import EducationSection from "./components/EducationSection";
 // import ExperienceSection from "./components/ExperienceSection";
 // import SkillsSection from "./components/SkillsSection";
@@ -73,10 +73,10 @@ const App = () => {
         <ProjectsSection />
         <CertificationsSection />
         <AchievementsSection />
-        <PortfolioGrid />
-        <ContactSection /> */}
+        <PortfolioGrid /> */}
+        <ContactSection />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

@@ -5,6 +5,7 @@ const links = [
   { label: "Home", href: "/home" },
   { label: "About", href: "/about" },
   { label: "Project", href: "/Project" },
+  { label: "Skills", href: "/skills" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -17,7 +18,7 @@ const StickyNavbar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-30 bg-white bg-opacity-60 backdrop-blur-[12px] shadow-md transition-all">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-9">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2 select-none">
@@ -29,7 +30,7 @@ const StickyNavbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center">
-            <ul className="flex gap-8 lg:gap-12">
+            <ul className="flex gap-5 lg:gap-8">
               {links.map((link) => (
                 <li key={link.label}>
                   <a
@@ -45,11 +46,11 @@ const StickyNavbar = () => {
 
           {/* Desktop Action Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="flex items-center gap-2 px-4 py-2 bg-purple-100 hover:bg-purple-200 text-purple-700 rounded-lg transition-colors font-medium select-none">
+            <button className="flex items-center gap-2 px-4 py-2 bg-purple-100 hover:bg-purple-200 text-purple-700 rounded-lg transition-colors font-medium select-none cursor-pointer">
               <Download className="w-4 h-4" />
               <span>Resume</span>
             </button>
-            <button className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors font-medium select-none">
+            <button className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors font-medium select-none cursor-pointer">
               <UserPlus className="w-4 h-4" />
               <span>Hire Me</span>
             </button>
