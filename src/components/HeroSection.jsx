@@ -2,7 +2,10 @@ import LovableAvatar from "./LovableAvatar";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="w-full flex flex-col md:flex-row items-center gap-8 md:gap-16 justify-center text-center md:text-left">
+    <section id="home" className="w-full flex flex-col md:flex-row items-center gap-8 md:gap-16 justify-center text-center md:text-left mt-16">
+      {/* <div>
+
+      </div> */}
       <div className="flex-1 flex justify-center animate-fade-in">
         <LovableAvatar />
       </div>
