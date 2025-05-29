@@ -1,24 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StickyNavbar from "./components/StickyNavbar";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
-// import PortfolioGrid from "./components/PortfolioGrid";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
-// import EducationSection from "./components/EducationSection";
-// import ExperienceSection from "./components/ExperienceSection";
 import SkillsSection from "./components/SkillsSection";
-// import ProjectsSection from "./components/ProjectsSection";
-// import CertificationsSection from "./components/CertificationsSection";
-// import AchievementsSection from "./components/AchievementsSection";
 
-// Soft gradient background with floating dots for the AI feel
 const Background = () => (
   <div
     className="fixed inset-0 -z-10 bg-gradient-to-br from-blue-100 via-purple-100 to-white animate-fade-in"
     aria-hidden="true"
   >
-    {/* Floating pastel dots */}
     {[...Array(12)].map((_, i) => (
       <span
         key={i}
@@ -59,26 +52,42 @@ const Background = () => (
   </div>
 );
 
+const HomePage = () => (
+  <main className="w-full max-w-5xl px-4 flex flex-col gap-12 mt-16 mb-16">
+    <HeroSection />
+    <AboutSection />
+    <SkillsSection />
+    <ContactSection />
+  </main>
+);
+
+const AboutPage = () => (
+  <main className="w-full max-w-5xl px-4 flex flex-col gap-12 mt-16 mb-16">
+    <AboutSection />
+  </main>
+);
+
+const ContactPage = () => (
+  <main className="w-full max-w-5xl px-4 flex flex-col gap-12 mt-16 mb-16">
+    <ContactSection />
+  </main>
+);
+
 const App = () => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-start bg-transparent font-sans">
-      <Background />
-      <StickyNavbar />
-      <main className="w-full max-w-5xl px-4 flex flex-col gap-12 mt-16 mb-16">
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        {/* <EducationSection />
-        <ExperienceSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <CertificationsSection />
-        <AchievementsSection />
-        <PortfolioGrid /> */}
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="relative min-h-screen flex flex-col items-center justify-start bg-transparent font-sans">
+        <Background />
+        <StickyNavbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/skills" element={<SkillsSection />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
