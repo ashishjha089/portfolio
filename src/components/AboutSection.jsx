@@ -21,24 +21,13 @@ export default function AboutSection() {
           <h3 className="text-2xl font-bold text-gray-800">Get to know me!</h3>
           <div className="space-y-4 text-gray-600 leading-relaxed">
             <p>
-              I'm <strong>Ashishkumar Jha</strong>, a Frontend Focused Web
-              Developer building and managing the Front-end of Websites and Web
-              Applications that leads to the success of the overall product.
-              Check out some of my work in the <strong>Projects</strong>{" "}
-              section.
-            </p>
-            <p>
-              I also like sharing content related to the stuff that I have
-              learned over the years in <strong>Web Development</strong> so it
-              can help other people of the Dev Community. Feel free to Connect
-              or Follow me on my <strong>LinkedIn</strong> and <strong>Github</strong> where I post useful
-              content related to Web Development and Programming.
-            </p>
-            <p>
-              I'm open to <strong>Job</strong> opportunities where I can
-              contribute, learn and grow. If you have a good opportunity that
-              matches my skills and experience then don't hesitate to{" "}
-              <strong>contact</strong> me.
+              I'm Ashishkumar Jha, a Frontend-focused Web Developer specializing
+              in building and managing websites and web applications for product
+              success. Explore my work in the Projects section. I also share
+              valuable Web Development content on LinkedIn and GitHub, aiming to
+              help the Dev Community. I'm actively seeking job opportunities
+              where I can learn, grow, and contribute my skills. Feel free to
+              connect if you have a suitable opening
             </p>
           </div>
           <a
@@ -75,10 +64,10 @@ export default function AboutSection() {
               <span className="text-gray-500">June 2018 – May 2020</span>
             </div>
             <div className="mt-1 text-gray-700 text-sm">
-            Higher Secondary Education 
+              Higher Secondary Education
             </div>
             <div className="mt-1 text-gray-600 text-xs">
-              Course: Physics ,Chemistry ,Maths ,English ,Computer 
+              Course: Physics ,Chemistry ,Maths ,English ,Computer
             </div>
           </div>
         </div>
