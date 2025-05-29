@@ -46,11 +46,11 @@ export default function SkillsSection() {
     { name: 'Supabase', color: 'bg-purple-400', icon: <SiSupabase /> },
     { name: 'Git', color: 'bg-red-400', icon: <FaGitAlt /> },
     { name: 'GitHub', color: 'bg-purple-400', icon: <FaGithub /> },
-    { name: 'Google Cloud Storage', color: 'bg-green-400', icon: <FaGoogle /> },
+    { name: 'GCP storage', color: 'bg-green-400', icon: <FaGoogle /> },
   ];
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-8 lg:py-12 mt-8">
       <style>{bounceStyle}</style>
       
       <div className="text-center mb-8 lg:mb-12">
