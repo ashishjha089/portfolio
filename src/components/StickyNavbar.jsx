@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Sparkles, Download, UserPlus, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const links = [
-  { label: "Home", href: "/home" },
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Project", href: "/Project" },
   { label: "Skills", href: "/skills" },
@@ -21,24 +22,24 @@ const StickyNavbar = () => {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-9">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2 select-none">
+          <Link to="/" className="flex items-center gap-2 select-none">
             <Sparkles className="text-purple-600 w-6 h-6" />
             <span className="font-bold text-xl text-gray-700 tracking-tight">
               AJ
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center">
             <ul className="flex gap-5 lg:gap-8">
               {links.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="relative text-gray-600 hover:text-purple-600 transition-colors font-medium after:content-[''] after:absolute after:h-0.5 after:bg-purple-400 after:w-0 hover:after:w-full after:transition-all after:left-0 after:-bottom-0.5"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -84,13 +85,13 @@ const StickyNavbar = () => {
             <ul className="space-y-3 border-b border-gray-200 pb-4">
               {links.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="block text-gray-600 hover:text-purple-600 transition-colors font-medium py-1"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
