@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import SkillsSection from "./components/SkillsSection";
+import ProjectsSection from "./components/ProjectSection";
 
 const Background = () => (
   <div
@@ -57,6 +58,7 @@ const HomePage = () => (
     <HeroSection />
     <AboutSection />
     <SkillsSection />
+    <ProjectsSection/>
     <ContactSection />
   </main>
 );
@@ -84,6 +86,7 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/skills" element={<SkillsSection />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/project" element={<ProjectsSection />} />
         </Routes>
         <Footer />
       </div>
